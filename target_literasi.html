@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Arial', sans-serif; /* Ganti dengan font family yang diinginkan */
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h2 {
+            padding: 10px; /* Tambahkan padding untuk judul */
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="text-center mb-4">Form Input</h2>
+    <form action="submit.php" onsubmit="return validateForm()" method="post">
+        <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" class="form-control" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+            <label for="alamat_email">Alamat Email:</label>
+            <input type="email" class="form-control" id="alamat_email" name="alamat_email" required>
+        </div>
+        <div class="form-group">
+            <label for="target_bacaa">Target Baca per Hari:</label>
+            <input type="number" class="form-control" id="target_bacaa" name="target_bacaa" required>
+        </div>
+        <div class="form-group">
+            <label for="media_literasi">Media Literasi:</label>
+            <input type="text" class="form-control" id="media_literasi" name="media_literasi" required>
+        </div>
+        <div class="form-group">
+            <label for="genre_fav">Genre Favorit:</label>
+            <input type="text" class="form-control" id="genre_fav" name="genre_fav" required>
+        </div>
+        <div class="form-group">
+            <label for="frekuensi_internet">Frekuensi Internet:</label>
+            <input type="text" class="form-control" id="frekuensi_internet" name="frekuensi_internet" required>
+        </div>
+        <div class="form-group">
+            <label for="aktivitas_internet">Aktivitas Internet:</label>
+            <input type="text" class="form-control" id="aktivitas_internet" name="aktivitas_internet" required>
+        </div>
+        <div class="form-group">
+            <label for="topik_literasi">Topik Literasi:</label>
+            <input type="text" class="form-control" id="topik_literasi" name="topik_literasi" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <p id="informasi" class="mt-3"></p>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function validateForm() {
+            let text = "Formulir berhasil disubmit!";
+            document.getElementById("informasi").innerHTML = text;
+            return true; // Formulir akan disubmit
+        }
+    </script>
+</body>
+
+</html>

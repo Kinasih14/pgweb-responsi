@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GIS Website Landing Page">
+    <title>Digital Literacy in Sleman</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript (including jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Tambahkan animasi scroll
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $($(this).attr('href'));
+    
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+    
+    <style>
+        div.scrollmenu {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+
+        body {
+            padding-top: 56px;
+            /* Adjust based on your navigation bar height */
+            font-family: 'Arial', sans-serif;
+        }
+
+
+        .jumbotron {
+            background-image: url('./img/cover.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            font-family: 'Georgia', serif;
+        }
+
+
+        .feature-box {
+            text-align: center;
+            margin: 20px;
+            font-family: 'Verdana', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">Digital Literacy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./literasi.html">Peta Index Literasi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Data Statistik
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="pilar_index_literasi.html">Pilar indeks literasi digital</a>
+                            <a class="dropdown-item" href="perpustakaan.html">Jumlah Perpustakaan</a>
+                            <a class="dropdown-item" href="koleksi_buku.html">Jumlah Koleksi Buku</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="scrollmenu">
+            <a href="#pilar">Pilar Literasi</a>
+            <a href="#gallery">Gallery</a>
+            <a href="target_literasi.html">Target Literasi</a>
+        </div>
+    </nav>
+
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Welcome to Digital Literacy Website in Sleman</h1>
+            <p class="lead">Selamat datang di Literasi Digital Kabupaten Sleman, 
+                pusat informasi literasi digital terdepan di wilayah ini. Kabupaten 
+                Sleman memperoleh prestasi tinggi dalam literasi digital dan ekonomi 
+                digital menurut studi INDELIX 2022 yang dilakukan Lazada dan Litbang. 
+                Di sini, Anda dapat menjelajahi peta lokasi toko buku, memahami 
+                pilar-pilar literasi digital, mengikuti program kerja literasi 
+                digital, dan mengeksplorasi data infografis tentang jumlah 
+                perpustakaan serta koleksi buku di Sleman. Bergabunglah dalam 
+                perjalanan literasi digital dan inovasi bersama kami di Kabupaten 
+                Sleman, di mana komitmen kami terletak pada pertumbuhan dan keterbukaan 
+                untuk teknologi terbaru. Selamat mengeksplorasi!</p>
+            <!-- Add any additional call-to-action buttons or links here -->
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <style>
+        .container {
+            font-family: 'Garamond', sans-serif;
+        }
+
+        .section-title {
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .feature-box h2,
+        .feature-box p {
+            font-family: 'Georgia', serif;
+        }
+    </style>
+
+<div id="pilar" class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="section-title">Pilar Literasi Kabupaten Sleman</h1>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="feature-box">
+                    <img src="./img/skill1.ico" alt="Digital Skill Image">
+                    <h2>Pilar Digital Skill</h2>
+                    <p>Pilar ini mengukur kemampuan terkait penggunaan aplikasi digital, contohnya kemampuan untuk mengunduh atau mengunggah file, serta kemampuan terkait penggunaan digital lainnya. Serta untuk mengetahui apakah informasi yang ditemukan di situs web benar atau salah</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature-box">
+                    <img src="./img/ethic.ico" alt="Digital Ethics Image">
+                    <h2>Pilar Digital Ethics</h2>
+                    <p>Pilar ini mengukur perilaku dan respon masyarakat saat menerima dan juga menyebarkan informasi yang diterima di media sosial maupun perangkat digital lainnya. Misal mengajak orang-orang untuk berkomentar negatif adalah kegiatan yang kurang baik secara etika digital. Untuk mengetahui kebiasaan positif dan negatif yang dilakukan responden pada saat melakukan aktivitas digital.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature-box">
+                    <img src="./img/safety.ico" alt="Digital Safety Image">
+                    <h2>Pilar Digital Safety</h2>
+                    <p>Pilar ini mengukur perilaku terkait keamanan data pribadi saat berinteraksi dan menggunakan media sosial serta perangkat digital lainnya. </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature-box">
+                    <img src="./img/cultural.ico" alt="Digital Cultural Image">
+                    <h2>Pilar Digital Culture</h2>
+                    <p>Pilar ini mengukur tentang penerapan budaya dan kultur Indonesia, serta lingkungan tempat tinggal saat berinteraksi melalui media sosial dan perangkat digital lainnya. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gallery" class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-title">Program Pendidikan dan Pelatihan Literasi Digital di Kabupetan Sleman</h2>
+            </div>
+        </div>
+        <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-sm-2 col-lg-6 mb-4">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"/>
+                        <image xlink:href="./img/gls.jpg" width="100%" height="100%" />
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">GLS (Gerakan Literasi Sekolah)</h5>
+                        <p class="card-text">Kegiatan dilakukan sesuai dengan jadwal yang telah ditentukan oleh tim literasi 
+                            sekolah antara lain: pembuatan puisi dan esai, meresensi majalah/koran, menanggapi
+                            artikel, dll.</p>
+                            <a href="https://smamuh3jogja.sch.id/berita/read/GERAKAN-LITERASI-SEKOLAH-GLS-SMA-MUHAMMADIYAH-3-YOGYAKARTA" class="btn btn-secondary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-2 col-lg-6 mb-4">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"/>
+                        <image xlink:href="./img/lidi.png" width="100%" height="100%" />
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">LIDI (Literasi Digital Inklusif)</h5>
+                        <p class="card-text">Kabupaten Sleman ditunjuk sebagai pilot project program pelatihan coding
+                            membuat games untuk siswa dan guru SMP.</p>
+                            <a href="https://mediacenter.slemankab.go.id/2018/08/13/literasi-digital-inklusif-latih-kreativitas-dan-kemandirian-siswa/" class="btn btn-secondary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 col-lg-6 mb-4">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"/>
+                        <image xlink:href="./img/eduwisata.jpeg" width="100%" height="100%" />
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Kunjung perpustakaan berbasis eduwisata</h5>
+                        <p class="card-text">Kunjung Perpustaakan ini merupakan layanan yang diberikan Pemkab Sleman dan Museum Pusat TNI Dirgantara Mandala
+                            melalui Dinas Perpustakaan dan Kearsipan dalam upaya menumbuhkan minat baca anak 
+                            pada tingkat Taman Kanak-Kanak dan Sekolah Dasar di wilayah Kabupaten Sleman.</p>
+                            <a href="https://slemankab.go.id/archive/2023/02/06/tingkatkan-literasi-anak-pemkab-sleman-launcing-program-kunjung-perpustakaan-berbasis-eduwisata/" class="btn btn-secondary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-2 col-lg-6 mb-4">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"/>
+                        <image xlink:href="./img/keluarga_literasi.png" width="100%" height="100%" />
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Keluarga Literasi dengan metode Read Aloud</h5>
+                        <p class="card-text">Kegiatan oleh kader PKK Kabupaten Sleman Tengah menyelenggarakan Pelatihan Read Aloud bagi kader PKK dengan kegiatan
+                            literasi untuk mengingkatkan pengetahuian dalam keluarga melalui minat embaca buku dimulai dari
+                            anak usia dini.</p>
+                            <a href="https://mediacenter.slemankab.go.id/2023/02/23/membentuk-keluarga-literasi-dengan-metode-read-aloud/" class="btn btn-secondary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 col-lg-6 mb-4">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"/>
+                        <image xlink:href="./img/gelang_sicantik.jpg" width="100%" height="100%" />
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Gelang Si Cantik (Gerakan Literasi Mengangkat Prestasi)</h5>
+                        <p class="card-text">Kegiatan ini dilakukan dengan membaca, menulis serta memanfaatkan teknologi informasi dan komunikasi
+                            guna mendorong minat literasi bagi para siswa di SMPN 4 Pakem. Hal ini dilakukan sebagai upaya 
+                            mendorong setiap siswa menghasilkan karya dan berprestasi dengan 10 kegiatan gerakan literasi 
+                            yang melibatkan siswa, guru, dan masyarakat.</p>
+                            <a href="https://carapandang.com/read-news/gelang-si-cantik-program-literasi-apik-dari-sleman" class="btn btn-secondary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-2 col-lg-6 mb-4">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"/>
+                        <image xlink:href="./img/gls_khusus.png"  width="100%" height="100%"/>
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">GLS Anak Kebutuhan Khusus</h5>
+                        <p class="card-text">Kegiatan ini bertujuan untuk menyiapkan bekal siswa agar mampu mandiri melalui
+                            kemampuan dan kompetensi literasinya. Kegiatan literasi ini dapat membantu mendorong
+                            iklim dan budaya sekolah kebutuhan khusus terutama minat baca di kalangan siswa.</p>
+                            <a href="https://mediacenter.slemankab.go.id/2019/10/15/gerakan-literasi-sekolah-sentuh-anak-berkebutuhan-khusus/" class="btn btn-secondary">Baca Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 GIS Website. All rights reserved.</p>
+    </footer>
+
+    
+
+</body>
+
+</html>
